@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github API</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fade-in"></div>
+
+        <div class="perfil-container">
+            <a class="linkPerfil" target="_blank">
+                <div class="perfil">
+                    <img class="photo" alt="Foto de perfil">
+                    <div class="info">
+                        <div class="descricao">
+                            <span class="name"></span>
+                            <span class="bio"></span>
+                            <span class="location"></span>
+                            <span class="login"></span>
+                        </div>
+                        <div class="infos-bottom">
+                            <p><span class="qtdRepos"></span> Repositórios</p>
+                            <div class="follow">
+                                <img src="./img/follower.svg" alt="User following">
+                                <p><span class="followers"></span> seguidores | <span class="following"></span> seguindo
+                                </p>
+                            </div>
+                            <span class="twitter"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="menu-hamburger active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="repos-container">
+            <div class="input-group">
+                <img class="search-image" src="./img/search.svg" alt="search image">
+                <input class="pesquisa" type="search" placeholder="Pesquisar">
+                <img class="filter-image" src="./img/filter.svg" alt="Filter of search">
+            </div>
+            <div class="filtersSelected ">
+                <div class="options"></div>
+                <div class="close">
+                    <img src="./img/close.svg" alt="close options">
+                </div>
+            </div>
+            <div class="modalFilter activeMenu">
+                <div class="checkboxes">
+                    <div class="box">
+                        <label class="checkboxDesign">
+                            <input type="checkbox" name="name" id="projectName">
+                            <span><i></i></span>
+                        </label>
+                        <label class="label-box" for="projectName">Nome</label>
+                    </div>
+                    <div class="box">
+                        <label class="checkboxDesign">
+                            <input type="checkbox" name="description" id="projectDescription">
+                            <span><i></i></span>
+                        </label>
+                        <label class="label-box" for="projectDescription">Descrição</label>
+                    </div>
+                    <div class="box">
+                        <label class="checkboxDesign">
+                            <input type="checkbox" name="language" id="projectLanguage">
+                            <span><i></i></span>
+                        </label>
+                        <label class="label-box" for="projectLanguage">Linguagem</label>
+                    </div>
+                    <div class="box">
+                        <label class="checkboxDesign">
+                            <input type="checkbox" name="homepage" id="projectHomepage">
+                            <span><i></i></span>
+                        </label>
+                        <label class="label-box" for="projectHomepage">Homepage</label>
+                    </div>
+                </div>
+                <div class="close">
+                    <img src="./img/close.svg" alt="close options">
+                </div>
+            </div>
+
+            <div class="repos"></div>
+        </div>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
